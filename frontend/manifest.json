@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail Email Tracker",
+    "version": "1.0",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Email Tracker"
+    }
+  }
+  
